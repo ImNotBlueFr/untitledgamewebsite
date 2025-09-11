@@ -390,7 +390,7 @@ var games = [
   {
   id: 'snowrider',
   title: 'Snow Rider',
-  url: 'https://itsvijaysingh.github.io/Snow-Rider3D/',
+  url: 'https://drippy-cat.github.io/snowrider3D',
   image: 'https://web-saystore-backend.sgdn.io/snwrdrw/game_preview_en__qzu7wcp7YDhr'
   },
   {
