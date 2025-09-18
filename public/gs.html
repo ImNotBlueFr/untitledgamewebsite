@@ -7,6 +7,8 @@
     <title>Untitled Game Website</title>
 
     <link rel="stylesheet" href="./css/master.css" />
+    <link rel="stylesheet" href="./css/cards.css" />
+
     <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
     <script src="/uv/uv.config.js"></script>
     <script src="./js/preload.js"></script>
@@ -31,13 +33,28 @@
         <div class="navitem"><a href="/search.html">Search</a></div>
       </div>
     </nav>
+    
+    <div class="main-content-wrapper">
+        <h1 class="page-title">Browse Games</h1>
+        <div class="search-container">
+            <input type="text" class="input" id="search" placeholder="Search Games" />
+        </div>
 
-    <h1>Games</h1>
-    <input type="text" class="input" id="search" placeholder="Search Games" style="text-align: center" />
+        <div class="card-section">
+            <h2 class="section-title">Your Favorites</h2>
+            <div class="cardgroup" id="favoritedgames"></div>
+        </div>
 
-    <div class="cardgroup" id="favoritedgames"></div>
-    <div class="cardgroup" id="gamecards"></div>
-    <button class="secondary" onclick="clearcustomgames()">Clear custom games</button>
+        <div class="card-section">
+            <h2 class="section-title">All Games</h2>
+            <div class="cardgroup" id="gamecards"></div>
+        </div>
+
+        <div class="button-container">
+            <button class="secondary" onclick="clearcustomgames()">Clear custom games</button>
+        </div>
+    </div>
+    
   </body>
 
   <script src="./js/index.js"></script>
@@ -45,24 +62,24 @@
   <script src="./js/games.js"></script>
 
   <script>
-    const searchInput = document.querySelector('#search')
-    const items = document.querySelectorAll('.card')
+    const searchInput = document.querySelector('#search');
+    const items = document.querySelectorAll('.card');
 
     searchInput.addEventListener('input', function (event) {
-      const query = event.target.value.toLowerCase()
+      const query = event.target.value.toLowerCase();
 
       items.forEach(function (item) {
-        const title = item.querySelector('.card h4').textContent.toLowerCase()
+        const title = item.querySelector('.card h4').textContent.toLowerCase();
 
         if (title.includes(query)) {
-          item.style.display = 'block'
+          item.style.display = 'block';
         } else {
-          item.style.display = 'none'
+          item.style.display = 'none';
         }
-      })
-    })
+      });
+    });
   </script>
-  
+    
   <script type="text/javascript">
       aclib.runAutoTag({
           zoneId: '6hmeyutild',
