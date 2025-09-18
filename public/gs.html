@@ -41,13 +41,8 @@
         </div>
 
         <div class="card-section">
-            <h2 class="section-title">New Games</h2>
-            <div class="cardgroup" id="newgames"></div>
-        </div>
-
-        <div class="card-section">
-            <h2 class="section-title">Trending Games</h2>
-            <div class="cardgroup" id="trendinggames"></div>
+            <h2 class="section-title">Your Favorites</h2>
+            <div class="cardgroup" id="favoritedgames"></div>
         </div>
 
         <div class="card-section">
@@ -74,10 +69,9 @@
       const query = event.target.value.toLowerCase();
 
       items.forEach(function (item) {
-        const title = item.querySelector('.card-title').textContent.toLowerCase();
-        const tags = item.querySelector('.card-tags').textContent.toLowerCase();
+        const title = item.querySelector('.card h4').textContent.toLowerCase();
 
-        if (title.includes(query) || tags.includes(query)) {
+        if (title.includes(query)) {
           item.style.display = 'block';
         } else {
           item.style.display = 'none';
