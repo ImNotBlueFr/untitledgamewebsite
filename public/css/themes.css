@@ -1,6 +1,6 @@
 body[theme="main"] {
-    --text-color: white;
-    --background: #1a2023;
-    --navbar: #0e1213;
-    --accent: #00bfff; /* Deep Sky Blue */
+    --text-color: #2c3e50; /* A darkish blue for the text */
+    --background: #1e2a38; /* A very dark blue background */
+    --navbar: #15202b; /* An even darker blue for the navigation bar */
+    --accent: #3498db; /* A vibrant blue for accents and links */
 }
