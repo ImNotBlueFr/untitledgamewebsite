@@ -1,97 +1,48 @@
-@import url(master.css);
+<!DOCTYPE html>
+<html>
+  <head>
+    </head>
 
-nav {
-    height: 100vh; /* Full viewport height */
-    width: 250px; /* Fixed width for the sidebar */
-    position: fixed; /* Keeps the nav bar on the screen */
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column; /* Stacks items vertically */
-    align-items: center;
-    padding-top: 20px;
-    background-color: var(--navbar);
-    border-right: 2px solid var(--accent); /* Changed from border-bottom to border-right */
-}
+  <body theme="main">
+    <nav>
+      <div class="logo">
+        <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
+        <h1>Untitled Game Website</h1>
+      </div>
+      <p id="time"></p>
+      <div class="navitems">
+        <div class="navitem"><a href="/">Home</a></div>
+        <div class="navitem"><a selected href="/gs.html">Games</a></div>
+        <div class="navitem"><a href="/apps.html">Apps</a></div>
+        <div class="navitem"><a href="/emulator.html">Request</a></div>
+        <div class="navitem"><a href="/search.html">Search</a></div>
+      </div>
+    </nav>
 
-nav .navitem {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 5px 0; /* Add vertical margin */
-}
+    <div id="sidebar-toggle" class="sidebar-toggle">
+        <span class="arrow left"></span>
+    </div>
 
-nav .navitems {
-    display: flex;
-    flex-direction: column; /* Stack items inside the container */
-    align-items: center;
-    width: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    opacity: 1;
-}
+    <div class="main-content-wrapper">
+      <h1 class="page-title">Browse Games</h1>
+      <div class="search-container">
+        <input type="text" class="input" id="search" placeholder="Search Games" />
+      </div>
 
-nav .logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px; /* Add space below the logo */
-}
+      <div class="card-section">
+        <h2 class="section-title">Your Favorites</h2>
+        <div class="cardgroup" id="favoritedgames"></div>
+      </div>
 
-nav .logo h1 {
-    margin-left: 10px;
-    font-size: 25px; /* Smaller font size for the sidebar */
-}
+      <div class="card-section">
+        <h2 class="section-title">All Games</h2>
+        <div class="cardgroup" id="gamecards"></div>
+      </div>
 
-nav a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 15px;
-    width: 100%;
-    text-align: center;
-    transition: 0.4s all;
-}
-
-nav a:visited {
-    color: var(--text-color);
-}
-
-nav img {
-    height: 40px;
-}
-
-nav .navitem a {
-    position: relative;
-}
-
-nav a[selected],
-nav .navitem a:hover {
-    background-color: transparent;
-    border-left: 2px solid var(--accent); /* Add a border to the left for selected/hovered items */
-    border-bottom: none;
-    text-decoration: none;
-    filter: brightness(100%);
-    color: var(--accent);
-}
-
-/* No separators needed for a vertical list, so this can be removed */
-/*
-nav .navitem:not(:last-child)::after {
-    content: "/";
-    margin: 0 5px;
-    color: gray;
-}
-*/
-
-.navitem a span {
-    width: 0;
-    opacity: 0;
-    transition: 0.3s all;
-}
-
-.navitem a:hover span {
-    width: 100%;
-    opacity: 1;
-}
+      <div class="button-container">
+        <button class="secondary" onclick="clearcustomgames()">Clear custom games</button>
+      </div>
+    </div>
+    
+    </body>
+</html>
