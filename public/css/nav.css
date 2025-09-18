@@ -1,59 +1,57 @@
 @import url(master.css);
 
 nav {
-    height: 55px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 20px;
-    margin: 0;
-    margin-bottom: 10px;
-    background-color: var(--navbar);
-    border-bottom: 2px solid var(--accent);
+    height: 100vh;
+    width: 250px;
     position: fixed;
-    top: 70px; /* This is the key change */
-    width: 100%;
-    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: var(--navbar);
+    border-right: 2px solid var(--accent);
 }
 
 nav .navitem {
     display: flex;
     align-items: center;
+    width: 100%;
+    margin: 5px 0;
 }
 
 nav .navitems {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    width: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
     opacity: 1;
-    justify-self: flex-end;
 }
 
 nav .logo {
     display: flex;
     align-items: center;
-    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 nav .logo h1 {
-    margin-left: 15px;
-    font-size: 30px;
+    margin-left: 10px;
+    font-size: 25px;
 }
 
 nav a {
     color: var(--text-color);
     text-decoration: none;
     font-size: 18px;
-    margin: 10px;
-    transition: all 0.6s;
     padding: 10px 15px;
     border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s all;
+    width: 100%;
+    text-align: center;
+    transition: all 0.4s;
 }
 
 nav a:visited {
@@ -71,16 +69,11 @@ nav .navitem a {
 nav a[selected],
 nav .navitem a:hover {
     background-color: transparent;
-    border-bottom: 2px solid var(--accent);
+    border-left: 2px solid var(--accent);
+    border-bottom: none;
     text-decoration: none;
     filter: brightness(100%);
     color: var(--accent);
-}
-
-nav .navitem:not(:last-child)::after {
-    content: "/";
-    margin: 0 5px;
-    color: gray;
 }
 
 .navitem a span {
