@@ -117,9 +117,9 @@ nav .navitem a:hover {
 /* Splash Page Styles */
 .splash-section {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Makes it a flex container */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
 }
 
 .center-container {
