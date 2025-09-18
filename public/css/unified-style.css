@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=JetBrains+Mono:wght@300;400&display=swap');
+@import url(main.css);
+@import url(themes.css);
+
+/* Master Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: gg sans;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/ggsans.woff2) format("woff2")
+}
+
+/* Nav Bar Styles */
+nav {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: var(--navbar);
+    border-right: 2px solid var(--accent);
+    z-index: 1000;
+}
+
+nav .navitem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0;
+}
+
+nav .navitems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav .logo h1 {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+nav a:visited {
+    color: var(--text-color);
+}
+
+nav img {
+    height: 40px;
+}
+
+nav .navitem a {
+    position: relative;
+}
+
+nav a[selected],
+nav .navitem a:hover {
+    background-color: transparent;
+    border-left: 2px solid var(--accent);
+    border-bottom: none;
+    text-decoration: none;
+    filter: brightness(100%);
+    color: var(--accent);
+}
+
+.navitem a span {
+    width: 0;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.navitem a:hover span {
+    width: 100%;
+    opacity: 1;
+}
+
+/* Main Content Wrapper */
+.main-content-wrapper {
+    margin-left: 250px; /* Pushes content away from the nav bar */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Splash Page Styles */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-large {
+    margin-bottom: 20px;
+}
+
+.logo-large img {
+    height: 150px;
+    width: 150px;
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.logo-large h1 {
+    font-size: 60px;
+    margin-top: 15px;
+}
+
+.button-group {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.styled-button {
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
+    color: var(--background);
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.4s all;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.styled-button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.styled-button-secondary {
+    background-color: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.4s all;
+    text-decoration: none;
+}
+
+.styled-button-secondary:hover {
+    cursor: pointer;
+    background-color: var(--accent);
+    color: var(--background);
+}
+
+/* About and QNA Section Styles */
+.section {
+    width: 80%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: var(--accent);
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.qna-section {
+    text-align: left;
+}
+
+.qna-item {
+    margin-bottom: 25px;
+}
+
+.qna-item .question {
+    font-size: 1.5em;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.qna-item .answer {
+    font-size: 1.1em;
+    color: var(--text-color);
+    margin-left: 20px;
+    line-height: 1.5;
+}
