@@ -1,5 +1,5 @@
 body[theme="main"] {
-    --text-color: #2c3e50; /* A darkish blue for the text */
+    --text-color: #f0f8ff; /* A very light, almost-white blue for better readability */
     --background: #1e2a38; /* A very dark blue background */
     --navbar: #15202b; /* An even darker blue for the navigation bar */
     --accent: #3498db; /* A vibrant blue for accents and links */
