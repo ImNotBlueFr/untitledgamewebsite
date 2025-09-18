@@ -1,7 +1,7 @@
 .section {
     width: 80%;
     max-width: 900px;
-    margin: 60px auto;
+    margin: 60px auto; /* Increased top margin for more separation */
     padding: 40px;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -9,6 +9,8 @@
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* Previous h2, p, qna-item, question, answer styles... */
 
 .section h2 {
     font-size: 3em;
