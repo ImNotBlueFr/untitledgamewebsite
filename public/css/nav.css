@@ -1,68 +1,59 @@
 @import url(master.css);
 
 nav {
-    height: 100vh;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: 55px;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
-    padding-top: 20px;
+    padding: 0 20px;
+    margin: 0;
+    margin-bottom: 10px;
     background-color: var(--navbar);
-    border-right: 2px solid var(--accent);
-    transition: width 0.5s ease-in-out; /* Add transition for smooth animation */
-}
-
-nav.collapsed {
-    width: 60px; /* New collapsed width */
+    border-bottom: 2px solid var(--accent);
+    position: fixed;
+    top: 70px; /* This is the key change */
+    width: 100%;
+    z-index: 100;
 }
 
 nav .navitem {
     display: flex;
     align-items: center;
-    width: 100%;
-    margin: 5px 0;
 }
 
 nav .navitems {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    width: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
     opacity: 1;
+    justify-self: flex-end;
 }
 
 nav .logo {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-}
-
-nav.collapsed .logo h1,
-nav.collapsed .navitems .navitem a span {
-    display: none; /* Hide text when collapsed */
+    margin-right: auto;
 }
 
 nav .logo h1 {
-    margin-left: 10px;
-    font-size: 25px;
-    transition: opacity 0.5s ease-in-out;
+    margin-left: 15px;
+    font-size: 30px;
 }
 
 nav a {
     color: var(--text-color);
     text-decoration: none;
     font-size: 18px;
+    margin: 10px;
+    transition: all 0.6s;
     padding: 10px 15px;
     border-radius: 15px;
-    width: 100%;
-    text-align: center;
-    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s all;
 }
 
 nav a:visited {
@@ -80,11 +71,16 @@ nav .navitem a {
 nav a[selected],
 nav .navitem a:hover {
     background-color: transparent;
-    border-left: 2px solid var(--accent);
-    border-bottom: none;
+    border-bottom: 2px solid var(--accent);
     text-decoration: none;
     filter: brightness(100%);
     color: var(--accent);
+}
+
+nav .navitem:not(:last-child)::after {
+    content: "/";
+    margin: 0 5px;
+    color: gray;
 }
 
 .navitem a span {
@@ -96,47 +92,4 @@ nav .navitem a:hover {
 .navitem a:hover span {
     width: 100%;
     opacity: 1;
-}
-
-/* Arrow Toggle Button */
-.sidebar-toggle {
-    position: fixed;
-    top: 50%;
-    left: 250px; /* Position it at the edge of the sidebar */
-    transform: translateY(-50%);
-    width: 20px;
-    height: 60px;
-    background-color: var(--accent);
-    cursor: pointer;
-    border-radius: 0 5px 5px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 99; /* Ensure it's below the nav but above the main content */
-    transition: left 0.5s ease-in-out; /* Transition for the toggle button */
-}
-
-.sidebar-toggle.collapsed {
-    left: 60px; /* New position when sidebar is collapsed */
-}
-
-.arrow {
-    width: 0;
-    height: 0;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    transition: all 0.5s ease-in-out;
-}
-
-.arrow.left {
-    border-right: 5px solid white;
-}
-
-.arrow.right {
-    border-left: 5px solid white;
-}
-
-.main-content-wrapper {
-  margin-left: 250px; /* Initial margin-left for the main content */
-  transition: margin-left 0.5s ease-in-out; /* Add transition */
 }
