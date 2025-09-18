@@ -1,0 +1,46 @@
+.side-menu {
+  height: 100%;
+  width: 0; /* Initial width is 0, will expand when clicked */
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: var(--nav-bg); /* Use a theme-based background color */
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.side-menu .navitem {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--text-color);
+  display: block;
+  transition: 0.3s;
+}
+
+.side-menu .navitem a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.side-menu .navitem a:hover {
+  color: var(--accent);
+}
+
+.menu-toggle {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 101;
+}
+
+.hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: var(--text-color);
+  margin: 6px 0;
+  transition: 0.4s;
+}
