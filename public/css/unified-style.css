@@ -115,14 +115,18 @@ nav .navitem a:hover {
 }
 
 /* Splash Page Styles */
+.splash-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .center-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
     text-align: center;
-    padding: 20px;
 }
 
 .logo-large {
