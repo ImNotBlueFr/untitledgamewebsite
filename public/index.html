@@ -17,22 +17,35 @@
   </head>
 
   <body theme="main">
-
-    <div class="splash-container">
-      <div class="logo-large">
+    <nav>
+      <div class="logo">
         <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
         <h1>Untitled Game Website</h1>
       </div>
-      <p>Your portal to a world of free games and apps.</p>
-      
+
+      <p id="time"></p>
+
+      <div class="navitems">
+        <div class="navitem"><a selected href="/">Home</a></div>
+        <div class="navitem"><a href="/gs.html">Games</a></div>
+        <div class="navitem"><a href="/apps.html">Apps</a></div>
+        <div class="navitem"><a href="/emulator.html">Request</a></div>
+        <div class="navitem"><a href="/search.html">Search</a></div>
+      </div>
+    </nav>
+
+    <div class="center-container">
+      <h1>Welcome to <span>Untitled Game Website</span></h1>
+      <br />
       <div class="button-group">
         <button onclick="launchab()" id="launchab">Open Hidden Tab</button>
         <a href="/gs.html" class="button play">Games</a>
       </div>
-
     </div>
 
+
     <script src="./js/index.js"></script>
+
     <script type="text/javascript" async>
       aclib.runAutoTag({
         zoneId: '6hmeyutild',
