@@ -1,48 +1,142 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    </head>
+@import url(master.css);
 
-  <body theme="main">
-    <nav id="sidebar">
-      <div class="logo">
-        <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
-        <h1>Untitled Game Website</h1>
-      </div>
-      <p id="time"></p>
-      <div class="navitems">
-        <div class="navitem"><a href="/">Home</a></div>
-        <div class="navitem"><a selected href="/gs.html">Games</a></div>
-        <div class="navitem"><a href="/apps.html">Apps</a></div>
-        <div class="navitem"><a href="/emulator.html">Request</a></div>
-        <div class="navitem"><a href="/search.html">Search</a></div>
-      </div>
-    </nav>
+nav {
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: var(--navbar);
+    border-right: 2px solid var(--accent);
+    transition: width 0.5s ease-in-out; /* Add transition for smooth animation */
+}
 
-    <div id="toggle-button">
-        <span class="arrow left"></span>
-    </div>
+nav.collapsed {
+    width: 60px; /* New collapsed width */
+}
 
-    <div class="main-content-wrapper">
-      <h1 class="page-title">Browse Games</h1>
-      <div class="search-container">
-        <input type="text" class="input" id="search" placeholder="Search Games" />
-      </div>
+nav .navitem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0;
+}
 
-      <div class="card-section">
-        <h2 class="section-title">Your Favorites</h2>
-        <div class="cardgroup" id="favoritedgames"></div>
-      </div>
+nav .navitems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+}
 
-      <div class="card-section">
-        <h2 class="section-title">All Games</h2>
-        <div class="cardgroup" id="gamecards"></div>
-      </div>
+nav .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
-      <div class="button-container">
-        <button class="secondary" onclick="clearcustomgames()">Clear custom games</button>
-      </div>
-    </div>
-    
-    </body>
-</html>
+nav.collapsed .logo h1,
+nav.collapsed .navitems .navitem a span {
+    display: none; /* Hide text when collapsed */
+}
+
+nav .logo h1 {
+    margin-left: 10px;
+    font-size: 25px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+nav a:visited {
+    color: var(--text-color);
+}
+
+nav img {
+    height: 40px;
+}
+
+nav .navitem a {
+    position: relative;
+}
+
+nav a[selected],
+nav .navitem a:hover {
+    background-color: transparent;
+    border-left: 2px solid var(--accent);
+    border-bottom: none;
+    text-decoration: none;
+    filter: brightness(100%);
+    color: var(--accent);
+}
+
+.navitem a span {
+    width: 0;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.navitem a:hover span {
+    width: 100%;
+    opacity: 1;
+}
+
+/* Arrow Toggle Button */
+.sidebar-toggle {
+    position: fixed;
+    top: 50%;
+    left: 250px; /* Position it at the edge of the sidebar */
+    transform: translateY(-50%);
+    width: 20px;
+    height: 60px;
+    background-color: var(--accent);
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99; /* Ensure it's below the nav but above the main content */
+    transition: left 0.5s ease-in-out; /* Transition for the toggle button */
+}
+
+.sidebar-toggle.collapsed {
+    left: 60px; /* New position when sidebar is collapsed */
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow.left {
+    border-right: 5px solid white;
+}
+
+.arrow.right {
+    border-left: 5px solid white;
+}
+
+.main-content-wrapper {
+  margin-left: 250px; /* Initial margin-left for the main content */
+  transition: margin-left 0.5s ease-in-out; /* Add transition */
+}
