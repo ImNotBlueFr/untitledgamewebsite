@@ -9,7 +9,6 @@ nav {
     margin: 0;
     margin-bottom: 10px;
     background-color: var(--navbar);
-    box-shadow: 0 0 15px 0 rgba(0, 191, 255, 0.2);
     border-bottom: 2px solid var(--accent);
 }
 
@@ -40,7 +39,7 @@ nav .logo h1 {
 }
 
 nav a {
-    color: var(--text);
+    color: var(--text-color);
     text-decoration: none;
     font-size: 18px;
     margin: 10px;
@@ -54,7 +53,7 @@ nav a {
 }
 
 nav a:visited {
-    color: var(--text);
+    color: var(--text-color);
 }
 
 nav img {
@@ -67,16 +66,11 @@ nav .navitem a {
 
 nav a[selected],
 nav .navitem a:hover {
-    background-color: var(--accent);
-    text-decoration: none;
-    color: var(--background);
-    filter: brightness(100%);
-    /* Removed animation */
-}
-
-nav .navitem a:hover {
+    background-color: transparent;
+    border-bottom: 2px solid var(--accent);
     text-decoration: none;
     filter: brightness(100%);
+    color: var(--accent);
 }
 
 nav .navitem:not(:last-child)::after {
