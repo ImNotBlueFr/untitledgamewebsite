@@ -121,12 +121,13 @@ button:hover {
 }
 
 .gamecontainer {
-    height: calc(100vh - (75px + 25px));
-    width: 100vw; /* Make it fullscreen */
+    height: calc(100vh - 100px); /* Adjusts height to give space to nav */
+    width: calc(100vw - 300px); /* Reduces width to account for sidebar */
+    margin-left: 280px; /* Pushes the container away from the sidebar */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 15px;
+    overflow: hidden; /* Prevents overflow */
 }
 
 #gameInfo {
@@ -135,10 +136,11 @@ button:hover {
 }
   
 #frame {
-    width: 100%; /* Make the iframe fill its container */
-    height: 100%;
+    max-width: 100%; /* Ensures it doesn't overflow its container */
+    max-height: 100%; /* Ensures it doesn't overflow its container */
     border-radius: 10px;
     background-color: white;
+    border: none;
 }
 #gameInfo .gameHeader {
     display: flex;
