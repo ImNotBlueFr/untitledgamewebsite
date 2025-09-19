@@ -156,25 +156,25 @@ var games = [
     {
   id: 'basketrandom',
   title: 'Basket Random',
-        url: 'https://ubg98.github.io/BasketRandom/',
+        url: 'https://www.twoplayergames.org/gameframe/basket-random',
   image: 'https://notagaemsite.github.io/images/gameicons/basketrandom.png'
   },
    {
   id: 'soccerrandom',
   title: 'Soccer Random',
-       url: 'https://ubg98.github.io/SoccerRandom/',
+       url: 'https://www.twoplayergames.org/gameframe/soccer-random',
   image: 'https://notagaemsite.github.io/images/gameicons/soccerrandom.png'
   },
    {
   id: 'volleyrandom',
   title: 'Volley Random',
-       url: 'https://ubg98.github.io/VolleyRandom/',
+       url: 'https://www.twoplayergames.org/gameframe/volley-random',
   image: 'https://notagaemsite.github.io/images/gameicons/volleyrandom.png'
   },
       {
   id: 'boxingrandom',
   title: 'Boxing Random',
-          url: 'https://ubg98.github.io/BoxingRandom/',
+          url: 'https://www.twoplayergames.org/gameframe/boxing-random',
   image: 'https://notagaemsite.github.io/images/gameicons/boxingrandom.png'
   },
      {

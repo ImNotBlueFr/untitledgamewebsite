@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Visual Studio\\untitledgamewebsite\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D2079563-D357-48BD-AD9C-C227A028EBAD}|data{D2079563-D357-48BD-AD9C-C227A028EBAD}|D:\\Visual Studio\\untitledgamewebsite\\public\\assets\\data\\games.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D2079563-D357-48BD-AD9C-C227A028EBAD}|data{D2079563-D357-48BD-AD9C-C227A028EBAD}|solutionrelative:public\\assets\\data\\games.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D2079563-D357-48BD-AD9C-C227A028EBAD}|data{D2079563-D357-48BD-AD9C-C227A028EBAD}|D:\\Visual Studio\\untitledgamewebsite\\public\\assets\\data\\apps.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{D2079563-D357-48BD-AD9C-C227A028EBAD}|data{D2079563-D357-48BD-AD9C-C227A028EBAD}|solutionrelative:public\\assets\\data\\apps.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "games.js",
+              "DocumentMoniker": "D:\\Visual Studio\\untitledgamewebsite\\public\\assets\\data\\games.js",
+              "RelativeDocumentMoniker": "public\\assets\\data\\games.js",
+              "ToolTip": "D:\\Visual Studio\\untitledgamewebsite\\public\\assets\\data\\games.js",
+              "RelativeToolTip": "public\\assets\\data\\games.js",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKoAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-19T14:21:23.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "apps.js",
               "DocumentMoniker": "D:\\Visual Studio\\untitledgamewebsite\\public\\assets\\data\\apps.js",
               "RelativeDocumentMoniker": "public\\assets\\data\\apps.js",
               "ToolTip": "D:\\Visual Studio\\untitledgamewebsite\\public\\assets\\data\\apps.js",
               "RelativeToolTip": "public\\assets\\data\\apps.js",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-09-19T03:33:01.836Z",
               "EditorCaption": ""
