@@ -12,18 +12,18 @@ body {
     -webkit-background-size: cover;
 }
 
-/* width */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
   
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: var(--accent);
     border-radius: 10px;
 }
   
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accent);
 }
@@ -136,8 +136,8 @@ button:hover {
 }
   
 #frame {
-    width: 85%; /* This is the key change to resize the frame */
-    height: 85%; /* This is the key change to resize the frame */
+    width: 85%;
+    height: 85%; 
     border-radius: 10px;
     background-color: white;
     border: none;
