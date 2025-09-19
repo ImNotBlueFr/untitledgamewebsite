@@ -9,19 +9,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=JetBrains+Mono:wght@300;400&display=swap');
         
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: "JetBrains Mono", monospace;
-            font-weight: 400;
-            box-sizing: border-box;
-        }
-
-        @font-face {
-            font-family: gg sans;
-            font-style: normal;
-            font-weight: 400;
-            src: url(/assets/fonts/ggsans.woff2) format("woff2")
+        :root {
+            --background: #121212;
+            --text-color: #f5f5f5;
+            --navbar: #212121;
+            --accent: #007bff;
         }
 
         body {
@@ -32,6 +24,21 @@
             background-size: cover;
             -webkit-background-size: cover;
             overflow-x: hidden;
+        }
+
+        @font-face {
+            font-family: gg sans;
+            font-style: normal;
+            font-weight: 400;
+            src: url(/assets/fonts/ggsans.woff2) format("woff2")
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "JetBrains Mono", monospace;
+            font-weight: 400;
+            box-sizing: border-box;
         }
 
         nav {
