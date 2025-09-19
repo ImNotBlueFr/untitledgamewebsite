@@ -115,7 +115,8 @@ nav .navitem a:hover {
 
 /* Splash Page Styles */
 .center-container {
-    min-height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh; /* Added to provide some spacing at the bottom */
     display: flex;
     flex-direction: column;
     align-items: center;
