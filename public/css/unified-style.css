@@ -109,14 +109,13 @@ nav .navitem a:hover {
 
 /* Main Content Wrapper */
 .main-content-wrapper {
-    margin-left: 250px;
+    margin-left: 250px; /* Pushes content away from the nav bar */
     padding: 20px;
 }
 
 /* Splash Page Styles */
 .center-container {
-    padding-top: 10vh;
-    padding-bottom: 10vh; /* Added to provide some spacing at the bottom */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
