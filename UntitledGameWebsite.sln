@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36202.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		index.js = index.js
+		README.md = README.md
+		vercel.json = vercel.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		public\404.html = public\404.html
+		public\about.html = public\about.html
+		public\ads.txt = public\ads.txt
+		public\apps.html = public\apps.html
+		public\emulator.html = public\emulator.html
+		public\gs.html = public\gs.html
+		public\index.html = public\index.html
+		public\load.html = public\load.html
+		public\registersw.js = public\registersw.js
+		public\ryanreynold.jpg = public\ryanreynold.jpg
+		public\search.html = public\search.html
+		public\settings.html = public\settings.html
+		public\sw.js = public\sw.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{C10FA4A8-8A45-4600-AAAE-50958922A9DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{2DC52F3B-10AB-4231-B718-98AB1C15A75C}"
+	ProjectSection(SolutionItems) = preProject
+		public\css\cards.css = public\css\cards.css
+		public\css\main.css = public\css\main.css
+		public\css\master.css = public\css\master.css
+		public\css\nav.css = public\css\nav.css
+		public\css\sections.css = public\css\sections.css
+		public\css\splash.css = public\css\splash.css
+		public\css\themes.css = public\css\themes.css
+		public\css\unified-style.css = public\css\unified-style.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{7D6E436C-6423-4564-89EF-2B951FE437A1}"
+	ProjectSection(SolutionItems) = preProject
+		public\js\apps.js = public\js\apps.js
+		public\js\games.js = public\js\games.js
+		public\js\index.js = public\js\index.js
+		public\js\load.js = public\js\load.js
+		public\js\preload.js = public\js\preload.js
+		public\js\search.js = public\js\search.js
+		public\js\settings.js = public\js\settings.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "uv", "uv", "{CB1E5748-E741-436F-919C-BDBB45175C88}"
+	ProjectSection(SolutionItems) = preProject
+		public\uv\uv.config.js = public\uv\uv.config.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{F758D97F-0848-4D85-BC20-D6B9D6BCF17D}"
+	ProjectSection(SolutionItems) = preProject
+		public\assets\images\add.png = public\assets\images\add.png
+		public\assets\images\icon.png = public\assets\images\icon.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "fonts", "fonts", "{76D273E1-FF51-4BE8-A93C-61E45D2ABBC8}"
+	ProjectSection(SolutionItems) = preProject
+		public\assets\fonts\ggsans.woff2 = public\assets\fonts\ggsans.woff2
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{D2079563-D357-48BD-AD9C-C227A028EBAD}"
+	ProjectSection(SolutionItems) = preProject
+		public\assets\data\apps.js = public\assets\data\apps.js
+		public\assets\data\games.js = public\assets\data\games.js
+		public\assets\data\refactor.html = public\assets\data\refactor.html
+		public\assets\data\splash.json = public\assets\data\splash.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{02EA681E-C7D8-13C7-8484-4AC65E1B71E8} = {8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}
+		{C10FA4A8-8A45-4600-AAAE-50958922A9DC} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{2DC52F3B-10AB-4231-B718-98AB1C15A75C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{7D6E436C-6423-4564-89EF-2B951FE437A1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{CB1E5748-E741-436F-919C-BDBB45175C88} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F758D97F-0848-4D85-BC20-D6B9D6BCF17D} = {C10FA4A8-8A45-4600-AAAE-50958922A9DC}
+		{76D273E1-FF51-4BE8-A93C-61E45D2ABBC8} = {C10FA4A8-8A45-4600-AAAE-50958922A9DC}
+		{D2079563-D357-48BD-AD9C-C227A028EBAD} = {C10FA4A8-8A45-4600-AAAE-50958922A9DC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13A717C3-FBE8-4E5C-BF7D-86CA5A704BFE}
+	EndGlobalSection
+EndGlobal

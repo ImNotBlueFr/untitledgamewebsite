@@ -32,8 +32,8 @@ var tabPresets = {
         icon: 'https://ssl.gstatic.com/classroom/ic_product_classroom_32.png'
     },
     default: {
-        name: 'Art Class',
-        icon: '/assets/images/icon.png'
+        name: 'Untitled Game Site',
+        icon: './assets/images/icon.png'
     }
 }
 

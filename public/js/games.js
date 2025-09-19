@@ -10,7 +10,8 @@ games.forEach(game => {
   if (game.image) image.src = game.image
   if (!game.image) image.src = "https://www.pngkey.com/png/full/167-1670247_white-globe-icon-png-holy-bible-new-international.png"
   if (game.description) descrip.innerHTML = game.description
-  image.loading = "lazy"
+    image.loading = "lazy"
+    image.draggable = false
   text.innerHTML = game.title
   card.appendChild(image)
   card.appendChild(text)

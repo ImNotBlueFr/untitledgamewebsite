@@ -44,10 +44,10 @@ h1 > span {
 }
 
 .center-container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
     text-align: center;
 }
 

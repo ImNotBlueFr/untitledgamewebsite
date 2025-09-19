@@ -17,36 +17,38 @@
     <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
   </head>
   <body theme="main">
-    <nav>
-      <div class="logo">
-        <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
-        <h1>Untitled Game Website/h1>
+      <nav>
+          <div class="logo">
+              <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
+              <h1 >Untitled Game Website</h1>
+          </div>
+          <p id="time"></p>
+          <div class="navitems">
+              <div class="navitem"><a href="/">Home</a></div>
+              <div class="navitem"><a href="/gs.html">Games</a></div>
+              <div class="navitem"><a href="/apps.html">Apps</a></div>
+              <div class="navitem"><a href="/emulator.html">Request</a></div>
+              <div class="navitem"><a href="/search.html">Search</a></div>
+          </div>
+      </nav>
+      <div class="main-content-wrapper">
+          <div class="center-container">
+              <h1>Untitled Game Website</h1>
+              <p id="splash">
+                  New website since other ones didnt work.
+              </p>
+              <br />
+              <button onclick="window.location.href='/index.html'" class="button play">
+                  Done reading?
+              </button>
+          </div>
       </div>
-      <p id="time"></p>
-      <div class="navitems">
-        <div class="navitem"><a href="/">Home</a></div>
-        <div class="navitem"><a href="/gs.html">Games</a></div>
-        <div class="navitem"><a href="/apps.html">Apps</a></div>
-        <div class="navitem"><a href="/emulator.html">Emulator</a></div>
-        <div class="navitem"><a href="/search.html">Search</a></div>
-      </div>
-    </nav>
-    <div class="center-container">
-      <h1>Art Class</h1>
-      <p id="splash">
-        New website since other ones didnt work.
-      </p>
-      <br />
-      <button onclick="window.location.href='/index.html'" class="button play">
-        Done reading?
-      </button>
-    </div>
-    <script src="./js/index.js"></script>
-    
-    <script type="text/javascript">
-        aclib.runAutoTag({
-            zoneId: '6hmeyutild',
-        });
-    </script>
+      <script src="./js/index.js"></script>
+
+      <script type="text/javascript">
+          aclib.runAutoTag({
+              zoneId: '6hmeyutild',
+          });
+      </script>
   </body>
 </html>

@@ -156,26 +156,26 @@ var games = [
     {
   id: 'basketrandom',
   title: 'Basket Random',
-  url: 'https://notagaemsite.github.io/games/basketrandom.html',
+        url: 'https://ubg98.github.io/BasketRandom/',
   image: 'https://notagaemsite.github.io/images/gameicons/basketrandom.png'
-  },
-      {
-  id: 'boxingrandom',
-  title: 'Boxing Random',
-  url: 'https://notagaemsite.github.io/games/boxingrandom.html',
-  image: 'https://notagaemsite.github.io/images/gameicons/boxingrandom.png'
   },
    {
   id: 'soccerrandom',
   title: 'Soccer Random',
-  url: 'https://notagaemsite.github.io/games/soccerrandom.html',
+       url: 'https://ubg98.github.io/SoccerRandom/',
   image: 'https://notagaemsite.github.io/images/gameicons/soccerrandom.png'
   },
    {
   id: 'volleyrandom',
   title: 'Volley Random',
-  url: 'https://notagaemsite.github.io/games/volleyrandom.html',
+       url: 'https://ubg98.github.io/VolleyRandom/',
   image: 'https://notagaemsite.github.io/images/gameicons/volleyrandom.png'
+  },
+      {
+  id: 'boxingrandom',
+  title: 'Boxing Random',
+          url: 'https://ubg98.github.io/BoxingRandom/',
+  image: 'https://notagaemsite.github.io/images/gameicons/boxingrandom.png'
   },
      {
   id: 'infinitecraft',
@@ -600,12 +600,12 @@ var games = [
   id: 'scratch',
   title: 'Scratch',
   url: 'https://scratch.mit.edu/',
-  image: 'hhttps://imgs.search.brave.com/lUAGc34H3KHxviyEDhzkzItkjZNDiKWMWB4J1jqLzak/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2QxODczYzAz/MDJjZDUyMDdjYjVk/MTYxNTM4OTVhYTk5/OWE4ZWFmZTEyYzE0/ZTljZjU4NDY4MzQ3/ZDFmMjgyZC9zY3Jh/dGNoLm1pdC5lZHUv',
+  image: 'https://imgs.search.brave.com/lUAGc34H3KHxviyEDhzkzItkjZNDiKWMWB4J1jqLzak/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2QxODczYzAz/MDJjZDUyMDdjYjVk/MTYxNTM4OTVhYTk5/OWE4ZWFmZTEyYzE0/ZTljZjU4NDY4MzQ3/ZDFmMjgyZC9zY3Jh/dGNoLm1pdC5lZHUv',
      tags: ["NEW"]
   },
   {
-  id: 'r.e.p.o',
-  title: 'R.E.P.O',
+  id: 'r.e.p.o.',
+  title: 'R.E.P.O.',
   url: 'https://imnotbluefr.github.io/LebronJamesGamesGames/Gam22',
   image: 'https://imgs.search.brave.com/YsXRePRgajihLksrhxr6Z7xTZcHcKYRz_aXx2nUISjY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdHls/ZXMucmVkZGl0bWVk/aWEuY29tL3Q1XzJy/NzZ4L3N0eWxlcy9j/b21tdW5pdHlJY29u/X3lhanJ5cDU3Z2dz/ZTEucG5nP3dpZHRo/PTk2JmhlaWdodD05/NiZmcmFtZT0xJmF1/dG89d2VicCZjcm9w/PTk2Ojk2LHNtYXJ0/JnM9NTEwNGY4NDY2/ZjU1ZGZhYjhjODlk/NGNlZWZjNWRkYTJh/MmYwYzk3ZA',
     tags: ["NEW"]

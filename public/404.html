@@ -18,36 +18,38 @@
   </head>
 
   <body>
-    <nav>
-      <div class="logo">
-        <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
-        <h1>Untitled Game Website</h1>
+      <nav>
+          <div class="logo">
+              <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
+              <h1>Untitled Game Website</h1>
+          </div>
+
+          <p id="time"></p>
+
+          <div class="navitems">
+              <div class="navitem"><a href="/">Home</a></div>
+              <div class="navitem"><a href="/gs.html">Games</a></div>
+              <div class="navitem"><a href="/apps.html">Apps</a></div>
+              <div class="navitem"><a href="/emulator.html">Emulator</a></div>
+              <div class="navitem"><a href="/search.html">Search</a></div>
+          </div>
+      </nav>
+
+      <div class="main-content-wrapper">
+          <div class="center-container">
+              <h1>404</h1>
+              <p id="splash">This probably wasn't supposed to happen.</p>
+              <br />
+              <p>
+                  In the event that isn't supposed to happen, <br />you can report it in
+                  our <a href="https://discord.gg/desmos">Discord server.</a>
+              </p>
+              <br />
+              <button onclick="window.location.href='/index.html'" class="button play">
+                  Go home?
+              </button>
+          </div>
       </div>
-
-      <p id="time"></p>
-
-      <div class="navitems">
-        <div class="navitem"><a href="/">Home</a></div>
-        <div class="navitem"><a href="/gs.html">Games</a></div>
-        <div class="navitem"><a href="/apps.html">Apps</a></div>
-        <div class="navitem"><a href="/emulator.html">Emulator</a></div>
-        <div class="navitem"><a href="/search.html">Search</a></div>
-      </div>
-    </nav>
-
-    <div class="center-container">
-      <h1>404</h1>
-      <p id="splash">This probably wasn't supposed to happen.</p>
-      <br />
-      <p>
-        In the event that isn't supposed to happen, <br />you can report it in
-        our <a href="https://discord.gg/desmos">Discord server.</a>
-      </p>
-      <br />
-      <button onclick="window.location.href='/index.html'" class="button play">
-        Go home?
-      </button>
-    </div>
   </body>
 
   <script src="./js/index.js"></script>
