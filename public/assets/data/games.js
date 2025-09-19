@@ -156,7 +156,7 @@ var games = [
     {
   id: 'basketrandom',
   title: 'Basket Random',
-  url: 'https://notagaemsite.github.io/games/basketrandom.html',
+  url: 'https://www.twoplayergames.org/gameframe/basket-random',
   image: 'https://notagaemsite.github.io/images/gameicons/basketrandom.png'
   },
       {
