@@ -19,13 +19,13 @@ body {
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--accent); 
+    background: var(--accent);
     border-radius: 10px;
 }
   
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--accent); 
+    background: var(--accent);
 }
 
 h1 , h2 , h3 {
@@ -68,7 +68,7 @@ button {
     padding: 12px 25px;
     border: none;
     font-size: 18px;
-    border-radius: 50px; /* Fully rounded buttons */
+    border-radius: 50px;
     transition: 0.4s all;
 }
 
@@ -82,7 +82,7 @@ button {
 }
 
 button:hover {
-    box-shadow: 0 0 15px 5px rgba(52, 152, 219, 0.2); /* Shadow color updated to match accent */
+    box-shadow: 0 0 15px 5px rgba(52, 152, 219, 0.2);
     cursor: pointer;
     transform: translateY(-2px);
 }
@@ -122,6 +122,7 @@ button:hover {
 
 .gamecontainer {
     height: calc(100vh - (75px + 25px));
+    width: 100vw; /* Make it fullscreen */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,7 +135,7 @@ button:hover {
 }
   
 #frame {
-    width: 75%;
+    width: 100%; /* Make the iframe fill its container */
     height: 100%;
     border-radius: 10px;
     background-color: white;
