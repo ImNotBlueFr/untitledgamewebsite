@@ -6,11 +6,9 @@
     <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
     <title>Untitled Game Website</title>
 
-    <link rel="stylesheet" href="./css/master.css" />
-    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/unified-style.css" />
 
     <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
-    <script src="/uv/uv.config.js"></script>
     <script src="./js/preload.js"></script>
 
     <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
@@ -33,11 +31,37 @@
         <div class="navitem"><a href="/search.html">Search</a></div>
       </div>
     </nav>
+    
+    <div class="main-content-wrapper">
+      <div class="center-container">
+        <h1>Welcome to <span>Untitled Game Website</span></h1>
+        <br />
+        <div class="button-group">
+          <button onclick="launchab()" id="launchab" class="styled-button">Open Hidden Tab</button>
+          <a href="/gs.html" class="styled-button-secondary">Games</a>
+        </div>
+      </div>
+      
+      <div class="section about-section">
+          <h2>About Us</h2>
+          <p>Untitled Game Website (formerly known as LebronJamesGames) is a game website that **strives to be different**. The owner actively responds to game requests and **tries to find games no matter what they might be**. However, please note that not all games are possible to add.</p>
+      </div>
 
-    <div class="center-container">
-      <h1>Welcome to <span>Untitled Game Website</span></h1>
-      <br />
-      <button onclick="launchab()" id="launchab" class="button play">Launch in about:blank</button>
+      <div class="section qna-section">
+          <h2>QNA SECTION</h2>
+          <div class="qna-item">
+              <h3 class="question">Q: How do I request games?</h3>
+              <p class="answer">A: It's on the sidebar!</p>
+          </div>
+          <div class="qna-item">
+              <h3 class="question">Q: Can you add games from PC/Mobile?</h3>
+              <p class="answer">A: It depends on the game. Some are available on the web, but most are not.</p>
+          </div>
+          <div class="qna-item">
+              <h3 class="question">Q: Can you change the website name?</h3>
+              <p class="answer">A: No.</p>
+          </div>
+      </div>
     </div>
 
     <script src="./js/index.js"></script>
