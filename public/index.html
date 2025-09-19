@@ -10,8 +10,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=JetBrains+Mono:wght@300;400&display=swap');
         
         :root {
-            --text-color: #f0f8ff;
             --background: #1e2a38;
+            --text-color: #f0f8ff;
             --navbar: #15202b;
             --accent: #3498db;
         }
@@ -137,135 +137,72 @@
             align-items: center;
         }
 
-        .about-section-wrapper {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        .page-title {
             text-align: center;
-            box-sizing: border-box;
-        }
-
-        .center-container {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .logo-large {
             margin-bottom: 20px;
+            font-size: 50px;
+            color: var(--text-color);
+            margin-top: 20px;
         }
 
-        .logo-large img {
-            height: 150px;
-            width: 150px;
-            animation: floating 3s ease-in-out infinite;
+        .search-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px 0;
+            text-align: center;
         }
 
-        @keyframes floating {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .logo-large h1 {
-            font-size: 60px;
-            margin-top: 15px;
-        }
-
-        .button-group {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .styled-button {
-            background-color: var(--accent);
-            border: 2px solid var(--accent);
-            color: var(--background);
-            padding: 12px 25px;
+        .input {
+            width: 100%;
+            height: 45px;
+            background-color: var(--navbar);
+            border: none;
+            border-radius: 5px;
+            color: var(--text-color);
+            padding: 5px 15px;
             font-size: 18px;
-            border-radius: 50px;
-            transition: 0.4s all;
-            text-decoration: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
-        .styled-button:hover {
-            cursor: pointer;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        .card-section {
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px 0;
         }
 
-        .styled-button-secondary {
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: var(--accent);
+        }
+
+        .cardgroup {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .button-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .secondary {
             background-color: transparent;
             border: 2px solid var(--accent);
             color: var(--accent);
             padding: 12px 25px;
             font-size: 18px;
             border-radius: 50px;
+            cursor: pointer;
             transition: 0.4s all;
-            text-decoration: none;
         }
 
-        .styled-button-secondary:hover {
-            cursor: pointer;
+        .secondary:hover {
             background-color: var(--accent);
             color: var(--background);
-        }
-
-        .section {
-            width: 80%;
-            max-width: 900px;
-            margin: 60px auto;
-            padding: 40px;
-            background-color: rgba(0, 0, 0, 0.1);
-            border-radius: 20px;
-            text-align: center;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .about-section {
-        }
-
-        .section h2 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            color: var(--accent);
-        }
-
-        .about-section p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            color: var(--text-color);
-        }
-
-        .qna-section {
-            text-align: left;
-        }
-
-        .qna-item {
-            margin-bottom: 25px;
-        }
-
-        .qna-item .question {
-            font-size: 1.5em;
-            color: var(--text-color);
-            margin-bottom: 5px;
-        }
-
-        .qna-item .answer {
-            font-size: 1.1em;
-            color: var(--text-color);
-            margin-left: 20px;
-            line-height: 1.5;
         }
     </style>
 </head>
@@ -278,49 +215,55 @@
         </div>
         <p id="time"></p>
         <div class="navitems">
-            <div class="navitem"><a selected href="/">Home</a></div>
-            <div class="navitem"><a href="/gs.html">Games</a></div>
+            <div class="navitem"><a href="/">Home</a></div>
+            <div class="navitem"><a selected href="/gs.html">Games</a></div>
             <div class="navitem"><a href="/apps.html">Apps</a></div>
             <div class="navitem"><a href="/emulator.html">Request</a></div>
             <div class="navitem"><a href="/search.html">Search</a></div>
         </div>
     </nav>
     <div class="main-content-wrapper">
-        <div class="center-container">
-            <h1>Welcome to <span>Untitled Game Website</span></h1>
-            <br />
-            <div class="button-group">
-                <button onclick="launchab()" id="launchab" class="styled-button">Open Hidden Tab</button>
-                <a href="/gs.html" class="styled-button-secondary">Games</a>
-            </div>
+        <h1 class="page-title">Browse Games</h1>
+        <div class="search-container">
+            <input type="text" class="input" id="search" placeholder="Search Games" />
         </div>
-        <div class="about-section-wrapper">
-            <div class="section about-section">
-                <h2>About Us</h2>
-                <p>Untitled Game Website (formerly known as LebronJamesGames) is a game website that tries to be different. The owner actively responds to game requests and will most likely find the game. However, please note that not all games are possible to add.</p>
-            </div>
+        <div class="card-section">
+            <h2 class="section-title">Your Favorites</h2>
+            <div class="cardgroup" id="favoritedgames"></div>
         </div>
-        <div class="qna-section">
-            <h2>QNA SECTION</h2>
-            <div class="qna-item">
-                <h3 class="question">Q: How do I request games?</h3>
-                <p class="answer">A: It's on the sidebar!</p>
-            </div>
-            <div class="qna-item">
-                <h3 class="question">Q: Can you add games from PC/Mobile?</h3>
-                <p class="answer">A: It depends on the game. Some are available on the web, but most are not.</p>
-            </div>
-            <div class="qna-item">
-                <h3 class="question">Q: Can you change the website name?</h3>
-                <p class="answer">A: No.</p>
-            </div>
+        <div class="card-section">
+            <h2 class="section-title">All Games</h2>
+            <div class="cardgroup" id="gamecards"></div>
+        </div>
+        <div class="button-container">
+            <button class="secondary" onclick="clearcustomgames()">Clear custom games</button>
         </div>
     </div>
     <script src="./js/index.js"></script>
-    <script type="text/javascript" async>
+    <script src="./assets/data/games.js"></script>
+    <script src="./js/games.js"></script>
+    <script>
+        const searchInput = document.querySelector('#search');
+        const items = document.querySelectorAll('.card');
+
+        searchInput.addEventListener('input', function (event) {
+            const query = event.target.value.toLowerCase();
+
+            items.forEach(function (item) {
+                const title = item.querySelector('.card h4').textContent.toLowerCase();
+
+                if (title.includes(query)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
         aclib.runAutoTag({
             zoneId: '6hmeyutild',
-        })
+        });
     </script>
 </body>
 </html>
