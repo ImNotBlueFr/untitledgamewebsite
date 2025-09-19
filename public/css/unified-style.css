@@ -111,21 +111,16 @@ nav .navitem a:hover {
 .main-content-wrapper {
     margin-left: 250px;
     padding: 20px;
-    display: grid;
-    grid-template-rows: 100vh auto auto; /* Sets up the three sections */
-    grid-template-columns: 1fr;
-    justify-items: center;
 }
 
+/* Splash Page Styles */
 .center-container {
-    grid-row: 1; /* Places the welcome section in the first row */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 100%;
-    max-width: 900px;
 }
 
 .logo-large {
