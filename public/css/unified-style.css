@@ -199,6 +199,9 @@ nav .navitem a:hover {
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
+.about-section {
+    margin-top: 100vh; /* This is the key change to move it down */
+}
 
 .section h2 {
     font-size: 3em;
