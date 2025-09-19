@@ -2,7 +2,7 @@
 @import url(main.css);
 @import url(themes.css);
 
-/* Master Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@
     src: url(/assets/fonts/ggsans.woff2) format("woff2")
 }
 
-/* Nav Bar Styles */
+
 nav {
     height: 100vh;
     width: 250px;
@@ -107,13 +107,12 @@ nav .navitem a:hover {
     opacity: 1;
 }
 
-/* Main Content Wrapper */
 .main-content-wrapper {
     margin-left: 250px;
     padding: 20px;
 }
 
-/* Splash Page Styles */
+
 .center-container {
     min-height: 100vh;
     display: flex;
@@ -187,7 +186,7 @@ nav .navitem a:hover {
     color: var(--background);
 }
 
-/* About and QNA Section Styles */
+
 .section {
     width: 80%;
     max-width: 900px;
@@ -200,7 +199,7 @@ nav .navitem a:hover {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .about-section {
-    margin-top: 100vh; /* This is the key change to move it down */
+    margin-top: 100vh; 
 }
 
 .section h2 {
@@ -235,3 +234,4 @@ nav .navitem a:hover {
     margin-left: 20px;
     line-height: 1.5;
 }
+
