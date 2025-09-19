@@ -15,10 +15,9 @@
   padding: 0;
   font-family: "JetBrains Mono", monospace;
   font-weight: 400;
-  box-sizing: border-box; /* Good practice to prevent layout issues */
+  box-sizing: border-box;
 }
 
-/* This rule prevents content from going underneath the fixed sidebar */
 .main-content-wrapper {
   margin-left: 250px;
 }
