@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <!-- keep this at the top or smth so i can get adds you butthole -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1606399065919714"
-     crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script>
     
-    <link
-      rel="shortcut icon"
-      href="./assets/images/icon.png"
-      type="image/png"
-    />
+    <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
     <title>Untitled Game Website</title>
 
-    <link rel="stylesheet" href="./css/master.css" />
+    <link rel="stylesheet" href="./css/unified-style.css" />
 
     <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
     <script src="/uv/uv.config.js"></script>
     <script src="./js/preload.js"></script>
-    
+
     <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
   </head>
 
-  <body>
+  <body theme="main">
     <nav>
       <div class="logo">
         <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
@@ -36,28 +31,26 @@
         <div class="navitem"><a href="/apps.html">Apps</a></div>
         <div class="navitem"><a href="/request.html">Request</a></div>
         <div class="navitem"><a href="/search.html">Search</a></div>
-        </div>
       </div>
     </nav>
-
+    
     <iframe class="frame"></iframe>
 
-  <div class="main-content-wrapper">
+    <div class="main-content-wrapper">
       <div class="center-container">
+        </div>
     </div>
-  </div>
-    
+
     <script>
       document.querySelector('.frame').src =
         '/service/' + __uv$config.encodeUrl('https://docs.google.com/forms/d/e/1FAIpQLSe0UszBXPPr7I1k6zDHA85AcedbTyDF_v2u7Ui-4Yk6pMcyGg/viewform?usp=dialog')
     </script>
-  </body>
+    <script src="./js/index.js"></script>
 
-  <script src="./js/index.js"></script>
-  
-  <script type="text/javascript">
+    <script type="text/javascript" async>
       aclib.runAutoTag({
-          zoneId: '6hmeyutild',
-      });
-  </script>
+        zoneId: '6hmeyutild',
+      })
+    </script>
+  </body>
 </html>
