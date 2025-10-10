@@ -619,8 +619,8 @@ var games = [
   },
 
   {
-  id: '!clashroyale',
-  title: '!Clash Royale (HIGHLY REQUESTED)',
+  id: 'clashroyale',
+  title: 'Clash Royale (HIGHLY REQUESTED)',
   url: 'https://www.easyfun.gg/cloud-games/clash-royale-cloud-online.html',
   image: 'https://games.lol/wp-content/uploads/2020/12/clash-royale-free-full-version.jpg',
   tags: ["NEW"]
