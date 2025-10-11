@@ -42,15 +42,11 @@ body[theme="darkgreen"] {
     --accent: #3e8927; 
 }
 
-}
-
 body[theme="red"] {
     --text-color: #db3434;
     --background: #381e1e;
     --navbar: #2b1515; 
     --accent: #db3434; 
-}
-
 }
 
 body[theme="darkred"] {
@@ -60,7 +56,6 @@ body[theme="darkred"] {
     --accent: #791e1e; 
 }
 
-}
 
 body[theme="purple"] {
     --text-color: #8300ff;
@@ -69,7 +64,6 @@ body[theme="purple"] {
     --accent: #8300ff; 
 }
 
-}
 
 body[theme="orange"] {
     --text-color: #ff9f00;
