@@ -30,21 +30,21 @@ body[theme="green"] {
     --text-color: #5bdb34;
     --background: #1e3820;
     --navbar: #1b2b15; 
-    --accent: #5bdb34; 
+    --accent: #3b842f; 
 }
 
 body[theme="red"] {
     --text-color: #db3434;
     --background: #381e1e;
     --navbar: #2b1515; 
-    --accent: #db3434; 
+    --accent: #842f2f; 
 }
 
 body[theme="purple"] {
     --text-color: #8300ff;
     --background: #28152b;
     --navbar: #27152b; 
-    --accent: #8300ff; 
+    --accent: #842f7e; 
 }
 
 
@@ -52,5 +52,5 @@ body[theme="orange"] {
     --text-color: #ff9f00;
     --background: #2b2315;
     --navbar: #2b2415; 
-    --accent: #ff9f00; 
+    --accent: #84642f; 
 }
