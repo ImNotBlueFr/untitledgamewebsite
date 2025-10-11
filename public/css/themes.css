@@ -33,8 +33,6 @@ body[theme="green"] {
     --accent: #5bdb34; 
 }
 
-}
-
 body[theme="darkgreen"] {
     --text-color: #3e8927;
     --background: #1e3820;
