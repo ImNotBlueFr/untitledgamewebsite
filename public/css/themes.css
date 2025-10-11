@@ -33,27 +33,12 @@ body[theme="green"] {
     --accent: #5bdb34; 
 }
 
-body[theme="darkgreen"] {
-    --text-color: #3e8927;
-    --background: #1e3820;
-    --navbar: #1b2b15; 
-    --accent: #3e8927; 
-}
-
 body[theme="red"] {
     --text-color: #db3434;
     --background: #381e1e;
     --navbar: #2b1515; 
     --accent: #db3434; 
 }
-
-body[theme="darkred"] {
-    --text-color: #791e1e;
-    --background: #381e1e;
-    --navbar: #2b1515; 
-    --accent: #791e1e; 
-}
-
 
 body[theme="purple"] {
     --text-color: #8300ff;
