@@ -21,8 +21,8 @@ body[theme="myeyes"] {
 
 body[theme="lebronjamesgames"] {
     --text-color: #663399;
-    --background: #0b0b0b;
-    --navbar: #0b0b0b; 
-    --accent: #663399; 
+    --background: #010101;
+    --navbar: #010101; 
+    --accent: #f1c232; 
 }
 
