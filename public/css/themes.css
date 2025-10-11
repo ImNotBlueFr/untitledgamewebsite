@@ -16,7 +16,7 @@ body[theme="myeyes"] {
     --text-color: #000000;
     --background: #ffffff;
     --navbar: #ffffff; 
-    --accent: #ffffff; 
+    --accent: #000000; 
 }
 
 body[theme="lebronjamesgames"] {
