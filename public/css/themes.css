@@ -5,21 +5,21 @@ body[theme="main"] {
     --accent: #3498db; 
 }
 
-body[theme="Dark Mode"] {
+body[theme="darkmode"] {
     --text-color: #ffffff;
     --background: #000000;
     --navbar: #3c3c3c; 
     --accent: #ffffff; 
 }
 
-body[theme="MY EYES"] {
+body[theme="myeyes"] {
     --text-color: #000000;
     --background: #ffffff;
     --navbar: #ffffff; 
     --accent: #ffffff; 
 }
 
-body[theme="LebronJamesGames"] {
+body[theme="lebronjamesgames"] {
     --text-color: #663399;
     --background: #311e38;
     --navbar: #272b15; 
