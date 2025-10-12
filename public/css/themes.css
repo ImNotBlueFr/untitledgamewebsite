@@ -56,7 +56,7 @@ body[theme="orange"] {
 }
 
 body[theme="hacker"] {
-    --text-color: #005500;
+    --text-color: #77ff77;
     --background: #00ff00;
     --navbar: #000000; 
     --accent: #005500; 
