@@ -55,10 +55,6 @@ body[theme="orange"] {
     --accent: #84642f; 
 }
 
-
-}
-
-
 body[theme="hacker"] {
     --text-color: #000000;
     --background: 'https://miro.medium.com/1*uAp4K4IuVOaJp6v4B99KSQ.jpeg';
