@@ -627,7 +627,7 @@ var games = [
   },
   {
   id: '!!!dudetheftauto',
-  title: '!!!Dude Theft Auto ITS BACK THANKS TO KEEGAN he told me
+  title: '!!!Dude Theft Auto (Thanks to Keegan)',
   url: 'https://dudetheftauto.io/',
   image: 'https://azgames.io/upload/cache/upload/imgs/dudetheftauto3-m180x180.png',
   tags: ["NEW"]
