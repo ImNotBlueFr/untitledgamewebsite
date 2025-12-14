@@ -620,9 +620,16 @@ var games = [
 
   {
   id: 'clashroyale',
-  title: 'Clash Royale (HIGHLY REQUESTED)',
+  title: 'Clash Royale',
   url: 'https://www.easyfun.gg/cloud-games/clash-royale-cloud-online.html',
   image: 'https://games.lol/wp-content/uploads/2020/12/clash-royale-free-full-version.jpg',
+  tags: ["NEW"]
+  },
+  {
+  id: '!!!dudetheftauto',
+  title: '!!!Dude Theft Auto (HIGHLY REQUESTED)',
+  url: 'https://dudetheftauto.io/',
+  image: 'https://azgames.io/upload/cache/upload/imgs/dudetheftauto3-m180x180.png',
   tags: ["NEW"]
   },
   
