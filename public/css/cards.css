@@ -31,10 +31,12 @@
 }
 
 .card:hover {
-    -webkit-box-shadow: 0px 2px 23px 5px var(--accent);;
-    -moz-box-shadow: 0px 2px 23px 5px var(--accent);
-    box-shadow: 0px 2px 23px 5px var(--accent);
-    /*transform: scale(1.05);*/
+    /* --- REMOVED GLOW EFFECT --- */
+    /* -webkit-box-shadow: 0px 2px 23px 5px var(--accent);; */
+    /* -moz-box-shadow: 0px 2px 23px 5px var(--accent); */
+    /* box-shadow: 0px 2px 23px 5px var(--accent); */
+    /* You can uncomment and replace the lines above with a simple visual change: */
+    /* transform: scale(1.05); /* <-- The original scaling effect is commented out, but you can use it */
 }
 
 .card>* {
