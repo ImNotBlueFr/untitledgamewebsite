@@ -2,9 +2,8 @@
 <html>
 
 <head>
-   <!-- keep this at the top or smth so i can get adds you butthole -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1606399065919714"
-     crossorigin="anonymous"></script>
+      crossorigin="anonymous"></script>
     
   <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
   <title>Untitled Game Website</title>
@@ -48,7 +47,7 @@
               <i class="fas fa-arrow-left"></i>
             </button>
           </a>
-          <button onclick="document.querySelector('iframe').requestFullscreen()">
+          <button onclick="openInBlank()">
             <i class="fas fa-expand"></i>
           </button>
           <button onclick="favorite()">
@@ -66,9 +65,36 @@
 <script src="./js/load.js"></script>
 
 <script type="text/javascript">
-    aclib.runAutoTag({
-        zoneId: '6hmeyutild',
-    });
+  /**
+   * Opens the source URL of the iframe in a new 'about:blank' window.
+   */
+  function openInBlank() {
+    // 1. Get the source URL of the iframe
+    const iframe = document.getElementById('frame');
+    const sourceUrl = iframe.src;
+
+    // Check if the iframe has a source
+    if (sourceUrl) {
+      // 2. Open a new window with 'about:blank'
+      const newWindow = window.open('about:blank');
+      
+      // Check if the new window was successfully opened
+      if (newWindow) {
+        // 3. Set the location of the new window to the iframe's source URL
+        newWindow.location.href = sourceUrl;
+      } else {
+        console.error("Popup blocked! Could not open new window.");
+        alert("Please allow pop-ups for this site to use the fullscreen feature.");
+      }
+    } else {
+      console.warn("Iframe source (src) is not set yet.");
+    }
+  }
+
+  // Original ad script
+  aclib.runAutoTag({
+    zoneId: '6hmeyutild',
+  });
 </script>
 
 </html>
