@@ -52,6 +52,8 @@ nav a {
     width: 100%;
     text-align: center;
     transition: all 0.4s;
+    /* --- ADDED: Removes the default browser focus outline/glow --- */
+    outline: none; 
 }
 
 nav a:visited {
@@ -72,8 +74,17 @@ nav .navitem a:hover {
     border-left: 2px solid var(--accent);
     border-bottom: none;
     text-decoration: none;
-    filter: brightness(100%);
+    /* --- Removed 'filter: brightness(100%);' for clarity, 
+           and it was likely unnecessary and could be overridden
+           if 'filter' was used elsewhere to cause a 'glow'. --- */
     color: var(--accent);
+}
+
+/* --- ADDED: This is a more specific way to remove the glow 
+       only when the element is focused (e.g., via keyboard tabbing). --- */
+nav a:focus {
+    outline: none;
+    /* You might want to add a different non-glowing focus indicator for accessibility here */
 }
 
 .navitem a span {
