@@ -400,10 +400,10 @@ var games = [
   image: 'https://dl.memuplay.com/new_market/img/com.kayac.eatingsimulator.sc2.2025-01-21-20-47-48.jpg'
   },
   {
-  id: 'Free tenis',
-  title: 'Free tenis',
-  url: 'https://freetenis.org/',
-  image: 'https://play-lh.googleusercontent.com/uIkyCgpMzZ2sJQ4kqBSaLszcbmTpK1DYruTUG1NOUmIdvPJR36xT3rMgkwzymj5sB98'
+  id: 'clash of vickings',
+  title: 'clash of vickings',
+  url: 'http://cdn-factory.marketjs.com',
+  image: 'https://m.media-amazon.com/images/I/81Z+V7GJIEL.png'
   },
   {
   id: 'twerkrace3d',
