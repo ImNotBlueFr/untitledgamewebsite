@@ -149,6 +149,12 @@ var apps = [
       'url': 'https://soundcloud.com/discover',
       'image': 'https://imgs.search.brave.com/cITFBqfwL8R8KcVrBVnr4mutx1MdwZ3SrxiSlMNye2E/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMTA5ZDgyNGJl/NjljY2RjMmFkYWFi/YThkMjA5NjkxNTNh/YzBmMGI0YWIxNGE4/YTVhNjI3N2IwODQ0/ZTEyMDk4Yy9zb3Vu/ZGNsb3VkLmNvbS8'
     },
+    {
+      'id': 'Wcoflix',
+      'title': 'Wcoflix',
+      'url': 'https://www.wcoflix.tv/home',
+      'image': 'https://files.catbox.moe/z9ltw9.png'
+    },
   ]
   
   var customapps = JSON.parse(localStorage.getItem("customapps"))
