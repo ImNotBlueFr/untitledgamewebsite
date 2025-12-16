@@ -400,9 +400,9 @@ var games = [
   image: 'https://dl.memuplay.com/new_market/img/com.kayac.eatingsimulator.sc2.2025-01-21-20-47-48.jpg'
   },
   {
-  id: 'movepeople',
-  title: 'Move People',
-  url: 'https://lagged.com/games/play2/movepeople900/',
+  id: 'Free tenis',
+  title: 'Free tenis',
+  url: 'https://freetenis.org/',
   image: 'https://play-lh.googleusercontent.com/uIkyCgpMzZ2sJQ4kqBSaLszcbmTpK1DYruTUG1NOUmIdvPJR36xT3rMgkwzymj5sB98'
   },
   {
