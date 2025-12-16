@@ -129,13 +129,6 @@ var games = [
     image: 'https://play-lh.googleusercontent.com/oObkhKfUXOY5yzheKe9w1Y1pXZBgdiSksMeNmT0BijoQ8J75maTCIW2TA7-6pA6EMA'
   },
   {
-    id: 'roblox',
-    title: 'Roblox',
-    url: 'learningwithlebron.vercel.app',
-    image: 'https://play-lh.googleusercontent.com/WNWZaxi9RdJKe2GQM3vqXIAkk69mnIl4Cc8EyZcir2SKlVOxeUv9tZGfNTmNaLC717Ht=w240-h480-rw',
-    description: 'EXPERIMENTAL: This may or may not work for you. Please don\'t report it if it doesn\'t. If you have bad WiFi, it may load slower than usual.'
-  },
-  {
     id: 'sandboxels',
     title: 'SandBoxels',
     url: 'https://sandboxels.r74n.com',
@@ -524,7 +517,6 @@ var games = [
   title: 'Gun Run 3D',
   url: 'https://imnotbluefr.github.io/LebronJamesGamesGames/Gam18',
   image: 'https://imgs.search.brave.com/Y7gIKb9U5abT0L887-UronevA5hJQQg9l8WW7uDWkTE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dG9wZ2FtZXMuY29t/L2Nkbi1jZ2kvaW1h/Z2UvcXVhbGl0eT03/OCxmb3JtYXQ9YXV0/by90aHVtYi9nYW1l/cy9XZWFwb24tTWFz/dGVyLUd1bi1TaG9v/dGVyLVJ1bi5qcGc',
-    tags: ["NEW"]
   },
   {
   id: 'speedstars',
@@ -626,10 +618,17 @@ var games = [
   tags: ["NEW"]
   },
   {
-  id: '!!!dudetheftauto',
-  title: '!!!Dude Theft Auto (Thanks to Keegan)',
+  id: 'dudetheftauto',
+  title: 'Dude Theft Auto',
   url: 'https://dudetheftauto.io/',
   image: 'https://azgames.io/upload/cache/upload/imgs/dudetheftauto3-m180x180.png',
+  tags: ["NEW"]
+  },
+  {
+  id: 'freetennis',
+  title: 'Free Tennis',
+  url: 'https://freetennis.org/',
+  image: 'https://files.catbox.moe/zr6t3l.png',
   tags: ["NEW"]
   },
   
