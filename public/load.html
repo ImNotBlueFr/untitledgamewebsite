@@ -2,61 +2,61 @@
 <html>
 
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1606399065919714"
-      crossorigin="anonymous"></script>
-    
-  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
-  <title>Untitled Game Website</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1606399065919714"
+      crossorigin="anonymous"></script>
+    
+  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+  <title>Untitled Game Website</title>
 
-  <link rel="stylesheet" href="./css/master.css" />
+  <link rel="stylesheet" href="./css/master.css" />
 
-  <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
-  <script src="/uv/uv.config.js"></script>
-  <script src="./js/preload.js"></script>
-  
-  <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+  <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script src="./js/preload.js"></script>
+  
+  <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
 </head>
 
 <body theme="main">
-  <nav>
-    <div class="logo">
-      <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
-      <h1>Untitled Game Website</h1>
-    </div>
+  <nav>
+    <div class="logo">
+      <img src="./assets/images/icon.png" alt="Logo" draggable="false" />
+      <h1>Untitled Game Website</h1>
+    </div>
 
-    <p id="time"></p>
+    <p id="time"></p>
 
-        <div class="navitems">
-        <div class="navitem"><a href="/">Home</a></div>
-        <div class="navitem"><a href="/gs.html">Games</a></div>
-        <div class="navitem"><a href="/apps.html">Apps</a></div>
-        <div class="navitem"><a href="/request.html">Request</a></div>
-        <div class="navitem"><a href="/Settings.html">Settings</a></div>
-    </div>
-  </nav>
+        <div class="navitems">
+        <div class="navitem"><a href="/">Home</a></div>
+        <div class="navitem"><a href="/gs.html">Games</a></div>
+        <div class="navitem"><a href="/apps.html">Apps</a></div>
+        <div class="navitem"><a href="/request.html">Request</a></div>
+        <div class="navitem"><a href="/Settings.html">Settings</a></div>
+    </div>
+  </nav>
 
-  <div class="gamecontainer">
-    <iframe allowfullscreen frameborder="0" id="frame"></iframe>
-    <div id="gameInfo">
-      <div class="gameHeader">
-        <img id="gameImage" alt="icon" />
-        <h3 id="gameTitle"></h3>
-        <div id="menubtns">
-          <a href="./gs.html">
-            <button onclick="window.location.href = '/'">
-              <i class="fas fa-arrow-left"></i>
-            </button>
-          </a>
-          <button onclick="openInBlank()">
-            <i class="fas fa-expand"></i>
-          </button>
-          <button onclick="favorite()">
-            <i class="favorited far fa-star"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="gamecontainer">
+    <iframe allowfullscreen frameborder="0" id="frame"></iframe>
+    <div id="gameInfo">
+      <div class="gameHeader">
+        <img id="gameImage" alt="icon" />
+        <h3 id="gameTitle"></h3>
+        <div id="menubtns">
+          <a href="./gs.html">
+            <button onclick="window.location.href = '/'">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+          </a>
+          <button onclick="openInBlank()">
+            <i class="fas fa-expand"></i>
+          </button>
+          <button onclick="favorite()">
+            <i class="favorited far fa-star"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="./js/index.js"></script>
@@ -65,40 +65,36 @@
 <script src="./js/load.js"></script>
 
 <script type="text/javascript">
-  /**
-   * Opens the source URL of the iframe in a new 'about:blank' window 
-    * and waits before redirecting to make the blank page visible.
-   */
-  function openInBlank() {
-    // 1. Get the source URL of the iframe
-    const iframe = document.getElementById('frame');
-    const sourceUrl = iframe.src;
+  /**
+   * Opens the source URL of the iframe in a new 'about:blank' window.
+   */
+  function openInBlank() {
+    // 1. Get the source URL of the iframe
+    const iframe = document.getElementById('frame');
+    const sourceUrl = iframe.src;
 
-    // Check if the iframe has a source
-    if (sourceUrl) {
-      // 2. Open a new window with 'about:blank'
-      const newWindow = window.open('about:blank', '_blank');
-      
-      // Check if the new window was successfully opened
-      if (newWindow) {
-        // 3. Use setTimeout to wait (e.g., 500ms) before redirecting
-        setTimeout(() => {
-          // 4. Set the location of the new window to the iframe's source URL
-          newWindow.location.href = sourceUrl;
-        }, 500); // 500 milliseconds (half a second)
-      } else {
-        console.error("Popup blocked! Could not open new window.");
-        alert("Please allow pop-ups for this site to use the fullscreen feature.");
-      }
-    } else {
-      console.warn("Iframe source (src) is not set yet.");
-    }
-  }
+    // Check if the iframe has a source
+    if (sourceUrl) {
+      // 2. Open a new window with 'about:blank'
+      const newWindow = window.open('about:blank');
+      
+      // Check if the new window was successfully opened
+      if (newWindow) {
+        // 3. Set the location of the new window to the iframe's source URL
+        newWindow.location.href = sourceUrl;
+      } else {
+        console.error("Popup blocked! Could not open new window.");
+        alert("Please allow pop-ups for this site to use the fullscreen feature.");
+      }
+    } else {
+      console.warn("Iframe source (src) is not set yet.");
+    }
+  }
 
-  // Original ad script
-  aclib.runAutoTag({
-    zoneId: '6hmeyutild',
-  });
+  // Original ad script
+  aclib.runAutoTag({
+    zoneId: '6hmeyutild',
+  });
 </script>
 
 </html>
