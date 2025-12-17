@@ -3,6 +3,7 @@ function setTheme(theme) {
     localStorage.setItem("theme", theme)
 }
 
+
 function setTab(name = document.querySelector('#tabname').value, icon = document.querySelector("#tabicon").value) {
     localStorage.setItem("tabName", name)
     localStorage.setItem("tabIcon", icon)
