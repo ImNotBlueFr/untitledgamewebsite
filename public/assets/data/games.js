@@ -119,7 +119,7 @@ var games = [
   {
     id: '1v1lol',
     title: "1v1.lol",
-    url: 'https://games.crazygames.com/en_US/1v1-lol/index.html?skipPrerollFirstSessionExp25=&v=1.329',
+    url: 'https://sites.google.com/canyonstudent.net/untitledgamewebsitedisclaimers/home?read_current=1',
     image: 'https://play-lh.googleusercontent.com/-dE43Bqni_bUnq0L-piPxiJG4YiCotk5khMdrQaQBJrXJ3vSgjNeIaKyA34rBvKQSyOy'
   },
   {
