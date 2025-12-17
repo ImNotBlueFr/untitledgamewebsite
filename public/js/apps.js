@@ -6,6 +6,7 @@ apps.forEach(app => {
   var descrip = document.createElement("p")
   descrip.classList.add("description")
   card.classList.add("card")
+  
 
   if (app.image) image.src = app.image
   if (!app.image) image.src = "https://www.pngkey.com/png/full/167-1670247_white-globe-icon-png-holy-bible-new-international.png"
